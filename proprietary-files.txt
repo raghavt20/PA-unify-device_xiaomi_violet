@@ -899,7 +899,15 @@ vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so|db112176d6e928770afde7369
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so|6dad847af6827e3111532d107fa4d308bf152a3f
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so|f257c2277e58533bb47b2f5df6e3b75a1e1afef8
 
-# Sensor
+# Sensors
+vendor/bin/hw/android.hardware.sensors@2.0-service
+vendor/bin/sensors.qti
+vendor/etc/init/android.hardware.sensors@2.0-service.rc
+vendor/lib64/android.hardware.sensors@2.0-impl.so
+vendor/lib64/libssc.so
+vendor/lib64/sensors.ssc.so
+
+# Sensor Configs
 vendor/etc/sensors/config/ak991x_dri_0.json
 vendor/etc/sensors/config/bma2x2_0.json
 vendor/etc/sensors/config/bme680_0.json
