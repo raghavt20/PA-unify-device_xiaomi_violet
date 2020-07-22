@@ -23,6 +23,9 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1
 
+# Incremental FS
+ro.incremental.enable=1
+
 # LMKD
 ro.config.low_ram=false
 ro.lmk.kill_heaviest_task=true
