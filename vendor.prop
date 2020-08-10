@@ -12,6 +12,8 @@ persist.vendor.audio.spv3.enable=true
 ro.af.client_heap_size_kbyte=7168
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=7
+vendor.audio.feature.compr_voip.enable=true
+vendor.voice.path.for.pcm.voip=true
 vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_multiplier=3
 vendor.audio_hal.period_size=240
@@ -182,3 +184,14 @@ vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
+
+# ACDB
+persist.vendor.audio.calfile0=/vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb
+persist.vendor.audio.calfile1=/vendor/etc/acdbdata/IDP/IDP_Headset_cal.acdb
+persist.vendor.audio.calfile2=/vendor/etc/acdbdata/IDP/IDP_General_cal.acdb
+persist.vendor.audio.calfile3=/vendor/etc/acdbdata/IDP/IDP_Codec_cal.acdb
+persist.vendor.audio.calfile4=/vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb
+persist.vendor.audio.calfile5=/vendor/etc/acdbdata/IDP/IDP_Hdmi_cal.acdb
+persist.vendor.audio.calfile6=/vendor/etc/acdbdata/IDP/IDP_Global_cal.acdb
+persist.vendor.audio.calfile7=/vendor/etc/acdbdata/IDP/IDP_Handset_cal.acdb
+>>>>>>> 25e03e30... violet: Decommonize voip properties
