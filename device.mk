@@ -352,6 +352,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
 
+# Shim for camera
+PRODUCT_PACKAGES += \
+    libshim_camera
+
 # Surfaceflinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
