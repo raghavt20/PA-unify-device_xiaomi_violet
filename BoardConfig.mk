@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2020 The LineageOS Project
+# Copyright (C) 2020 Paranoid Android
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -35,6 +35,7 @@ TARGET_OTA_ASSERT_DEVICE := violet
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sm6150
 TARGET_NO_BOOTLOADER := true
+MSMSTEPPE := sm6150
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
