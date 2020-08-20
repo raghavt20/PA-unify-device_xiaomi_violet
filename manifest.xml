@@ -533,7 +533,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
            <instance>default</instance>
        </interface>
     </hal>
-    <!-- Tether Offload -->
+    <!-- Tether Offload
     <hal format="hidl">
         <name>android.hardware.tetheroffload.config</name>
         <transport>hwbinder</transport>
@@ -551,7 +551,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IOffloadControl</name>
             <instance>default</instance>
         </interface>
-    </hal>
+    </hal> -->
     <hal format="hidl">
         <name>vendor.qti.hardware.data.iwlan</name>
         <transport>hwbinder</transport>
