@@ -21,6 +21,7 @@ persist.vendor.data.profile_update=true
 debug.sf.latch_unsignaled=1
 persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1
+ro.sf.blurs_are_expensive=1
 
 # Incremental FS
 ro.incremental.enable=1
