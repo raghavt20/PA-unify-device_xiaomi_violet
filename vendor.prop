@@ -98,7 +98,6 @@ persist.vendor.qcom.bluetooth.enable.splita2dp=true
 camera.disable_zsl_mode=1
 
 # Crypto
-ro.crypto.allow_encrypt_override=true
 ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Display post-processing
