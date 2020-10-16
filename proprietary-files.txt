@@ -895,7 +895,6 @@ system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephonyservice.xml
 system_ext/framework/embmslibrary.jar
 system_ext/framework/qcrilhook.jar
-system_ext/framework/qti-telephony-common.jar
 vendor/bin/hw/qcrild
 vendor/bin/adpl
 vendor/bin/netmgrd
@@ -1057,6 +1056,9 @@ vendor/etc/thermal-engine-normal.conf
 vendor/etc/thermal-engine-studio.conf
 vendor/etc/thermal-engine-tgame.conf
 vendor/lib64/libthermalfeature.so
+
+# Telephony - from smali edit: https://gist.github.com/PIPIPIG233666/72806386c8b93729ce7f2b2c263d8889
+system_ext/framework/qti-telephony-common.jar|7a3f1fa141520e83e58d4afc6eebfc4f38dc9f27
 
 # Radio - IMS - from davinci-user 11 RKQ1.200826.002 20.10.20 release-keys
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice.xml
