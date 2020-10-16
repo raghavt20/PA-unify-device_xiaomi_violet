@@ -28,6 +28,7 @@
  */
 #ifndef _LOC_MISC_UTILS_H_
 #define _LOC_MISC_UTILS_H_
+#include <stdint.h>
 #include <ios>
 #include <string>
 #include <sstream>
@@ -142,6 +143,59 @@ SIDE EFFECTS
 ===========================================================================*/
 uint64_t getQTimerTickCount();
 
+/*===========================================================================
+FUNCTION getQTimerDeltaNanos
+
+DESCRIPTION
+This function is used to read the the difference in nanoseconds between
+Qtimer on AP side and Qtimer on MP side for dual-SoC architectures such as Kona
+
+DEPENDENCIES
+N/A
+
+RETURN VALUE
+uint64_t QTimer difference in nanoseconds
+
+SIDE EFFECTS
+N/A
+===========================================================================*/
+uint64_t getQTimerDeltaNanos();
+
+/*===========================================================================
+FUNCTION getQTimerFreq
+
+DESCRIPTION
+   This function is used to read the QTimer frequency in hz. This value is globally maintained and
+   must be the same across all processors on a target.
+
+DEPENDENCIES
+   N/A
+
+RETURN VALUE
+    uint64_t QTimer frequency
+
+SIDE EFFECTS
+   N/A
+===========================================================================*/
+uint64_t getQTimerFreq();
+
+/*===========================================================================
+FUNCTION getBootTimeMilliSec
+
+DESCRIPTION
+   This function is used to get boot time in milliseconds.
+
+DEPENDENCIES
+   N/A
+
+RETURN VALUE
+    uint64_t boot time in milliseconds
+
+SIDE EFFECTS
+   N/A
+===========================================================================*/
+uint64_t getBootTimeMilliSec();
+
 #ifdef __cplusplus
 }
 #endif
@@ -202,6 +256,27 @@ static string loc_prim_arr_to_string(T* arr, uint32_t size, bool decIfTrue = tru
         }
     }
     return ss.str();
+}
+
+/*===========================================================================
+FUNCTION qTimerTicksToNanos
+
+DESCRIPTION
+    Transform from ticks to nanoseconds, clock is 19.2 MHz
+    so the formula would be qtimer(ns) = (ticks * 1000000000) / 19200000
+    or simplified qtimer(ns) = (ticks * 10000) / 192.
+
+DEPENDENCIES
+    N/A
+
+RETURN VALUE
+    Qtimer value in nanoseconds
+
+SIDE EFFECTS
+    N/A
+===========================================================================*/
+inline uint64_t qTimerTicksToNanos(double qTimer) {
+    return (uint64_t((qTimer * double(10000ull)) / (double)192ull));
 }
 
 #endif //_LOC_MISC_UTILS_H_
