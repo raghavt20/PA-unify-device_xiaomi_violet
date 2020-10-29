@@ -1,8 +1,8 @@
+libqti-perfd-client.so
 libadsprpc.so
 libcdsprpc.so
 libsdsprpc.so
 libfastcvopt.so
-liblistenjni.so
 liblistensoundmodel2.so
 libOpenCL.so
 libnpu.so
@@ -25,6 +25,11 @@ libarcsoft_low_light_hdr.so
 libmibokeh_712.so
 libarcsoft_distortion_correction.so
 libarcsoft_bodyslim.so
+libhta_hexagon_runtime.so
+unnhal-acc-hta.so
+libHalSuperSensorServer.so
+libSuperSensor.so
+libSuperSensorCPU.so
 libalCFR.so
 libcvp.so
 libcvp_stub.so
@@ -39,3 +44,6 @@ lib_denoiser3.so
 libxml2_vendor.so
 libprotobuf-cpp-full.so
 libprotobuf-cpp-lite.so
+libalAILDC.so
+libVDClearShot.so
+libVDSuperPhotoAPI.so
