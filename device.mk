@@ -316,18 +316,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += ParanoidDoze
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.sm6150-libperfmgr \
-    powerhint.json
-
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json \
     $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
 
 # QTI
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
+
+# QTI common
+TARGET_COMMON_QTI_COMPONENTS := perf
 
 # Ramdisk
 PRODUCT_PACKAGES += \
