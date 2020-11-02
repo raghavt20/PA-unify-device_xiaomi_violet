@@ -586,59 +586,60 @@ vendor/firmware/a612_zap.b02
 vendor/firmware/a612_zap.elf
 vendor/firmware/a612_zap.mdt
 
-# Graphics (Adreno)
+# Graphics (Adreno) - from davinci-user 11 RKQ1.200826.002 20.10.20 release-keys
+vendor/lib64/libC2D2.so
+vendor/lib64/libCB.so
+vendor/lib64/libOpenCL.so
+vendor/lib64/libc2d30_bltlib.so
+vendor/lib64/libllvm-qcom.so
+vendor/lib64/libpvr.so
+vendor/lib/libC2D2.so
+vendor/lib/libCB.so
+vendor/lib/libOpenCL.so
+vendor/lib/libc2d30_bltlib.so
+vendor/lib/libllvm-qcom.so
+vendor/lib/libpvr.so
+-vendor/app/com.qualcomm.qti.gpudrivers.sm6150.api30/com.qualcomm.qti.gpudrivers.sm6150.api30.apk
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so
 vendor/lib64/egl/libGLESv1_CM_adreno.so
 vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libQTapGLES.so
 vendor/lib64/egl/libq3dtools_adreno.so
 vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libCB.so
-vendor/lib64/libOpenCL.so
+vendor/lib64/hw/vulkan.adreno.so
+vendor/lib64/libVkLayer_q3dtools.so
+vendor/lib64/libadreno_app_profiles.so
 vendor/lib64/libadreno_utils.so
-vendor/lib64/libc2d30_bltlib.so
+vendor/lib64/libgpudataproducer.so
 vendor/lib64/libgsl.so
 vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-vendor/lib64/libpvr.so
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libQTapGLES.so
 vendor/lib/egl/libq3dtools_adreno.so
 vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/libC2D2.so
-vendor/lib/libCB.so
-vendor/lib/libOpenCL.so
+vendor/lib/hw/vulkan.adreno.so
+vendor/lib/libVkLayer_q3dtools.so
+vendor/lib/libadreno_app_profiles.so
 vendor/lib/libadreno_utils.so
-vendor/lib/libc2d30_bltlib.so
+vendor/lib/libgpudataproducer.so
 vendor/lib/libgsl.so
 vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libpvr.so
 
-# Graphics (DRM)
+# Graphics (DRM) - from davinci-user 11 RKQ1.200826.002 20.10.20 release-keys
 vendor/lib64/libsdedrm.so
 vendor/lib/libsdedrm.so
 
-# Graphics (HDR)
+# Graphics (HDR) - from davinci-user 11 RKQ1.200826.002 20.10.20 release-keys
 vendor/lib64/libhdr_tm.so
 vendor/lib/libhdr_tm.so
 
-# Graphics (Renderscript)
-vendor/lib64/libRSDriver_adreno.so
-vendor/lib64/libbccQTI.so
+# Graphics (Renderscript) - from davinci-user 11 RKQ1.200826.002 20.10.20 release-keys
 vendor/lib64/librs_adreno.so
-vendor/lib64/librs_adreno_sha1.so
-vendor/lib/libRSDriver_adreno.so
-vendor/lib/libbccQTI.so
 vendor/lib/librs_adreno.so
-vendor/lib/librs_adreno_sha1.so
 
-# Graphics (SDM)
+# Graphics (SDM) - from davinci-user 11 RKQ1.200826.002 20.10.20 release-keys
 vendor/lib64/libqseed3.so
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libsdm-color.so
@@ -654,10 +655,6 @@ vendor/lib/libsdm-diag.so
 vendor/lib/libsdm-disp-vndapis.so
 vendor/lib/libsdmextension.so
 vendor/lib/libtinyxml2_1.so
-
-# Graphics (Vulkan)
-vendor/lib64/hw/vulkan.sm6150.so
-vendor/lib/hw/vulkan.sm6150.so
 
 # IFAA - from davinci-user 11 RKQ1.200826.002 20.10.20 release-keys
 -app/IFAAService/IFAAService.apk:vendor/app/IFAAService/IFAAService.apk
@@ -882,7 +879,7 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 
-# Radio
+# Radio - from davinci-user 11 RKQ1.200826.002 20.10.20 release-keys
 -system_ext/app/DeviceInfo/DeviceInfo.apk
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 -system_ext/app/datastatusnotification/datastatusnotification.apk
@@ -1057,7 +1054,7 @@ vendor/etc/thermal-engine-studio.conf
 vendor/etc/thermal-engine-tgame.conf
 vendor/lib64/libthermalfeature.so
 
-# Radio - IMS
+# Radio - IMS - from davinci-user 11 RKQ1.200826.002 20.10.20 release-keys
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice.xml
 -system_ext/app/imssettings/imssettings.apk
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
