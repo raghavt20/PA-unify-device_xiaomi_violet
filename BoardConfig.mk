@@ -37,6 +37,9 @@ TARGET_BOOTLOADER_BOARD_NAME := sm6150
 TARGET_NO_BOOTLOADER := true
 MSMSTEPPE := sm6150
 
+# Broken Rules
+BUILD_BROKEN_DUP_RULES := true
+
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
