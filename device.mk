@@ -330,7 +330,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
 # QTI common
-TARGET_COMMON_QTI_COMPONENTS := perf
+TARGET_COMMON_QTI_COMPONENTS := av bt perf telephony wfd
 
 # Ramdisk
 PRODUCT_PACKAGES += \
