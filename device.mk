@@ -13,6 +13,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/violet/violet-vendor.mk)
 
+# Board
+TARGET_BOARD_PLATFORM := sm6150
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -163,26 +166,8 @@ PRODUCT_PACKAGES += \
 
 # Display/Graphics
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-service \
-    android.hardware.graphics.mapper@3.0-impl-qti-display \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    gralloc.sm6150 \
-    hwcomposer.sm6150 \
-    libdisplayconfig \
     libtinyxml \
-    libvulkan \
-    memtrack.sm6150 \
-    vendor.qti.hardware.display.allocator-service
-
-# Display interfaces
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.display.composer@1.0.vendor \
-    vendor.qti.hardware.display.composer@2.0.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor \
-    vendor.qti.hardware.display.mapper@3.0 \
-    vendor.qti.hardware.display.mapper@4.0.vendor \
+    libvulkan
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -328,7 +313,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
 # QTI common
-TARGET_COMMON_QTI_COMPONENTS := perf
+TARGET_COMMON_QTI_COMPONENTS := perf display
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -387,17 +372,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     libshim_camera
 
-# Surfaceflinger
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
-ro.surface_flinger.has_HDR_display=true \
-ro.surface_flinger.has_wide_color_display=true \
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
-ro.surface_flinger.max_virtual_display_dimension=4096 \
-ro.surface_flinger.protected_contents=true \
-ro.surface_flinger.use_color_management=true \
-ro.surface_flinger.wcg_composition_dataspace=143261696
-
 # Telephony
 PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
@@ -442,17 +416,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libdisplayconfig.vendor \
-    libnl \
-    libqdMetaData \
-    libqdMetaData.system \
-    libqdMetaData.vendor
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 # Speed profile services and wifi-service to reduce RAM and storage.
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
