@@ -346,10 +346,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librecovery_updater_xiaomi
 
-# RenderScript HAL
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
-
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.1 \
