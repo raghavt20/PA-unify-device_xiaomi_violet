@@ -589,6 +589,14 @@ vendor/firmware/a612_zap.b02
 vendor/firmware/a612_zap.elf
 vendor/firmware/a612_zap.mdt
 
+# Graphics (Xiaomi)
+vendor/lib64/libclient2slpi.notifier.so
+vendor/lib/libclient2slpi.notifier.so
+
+# Graphics Citsensorservice
+lib/vendor.xiaomi.hardware.citsensorservice@1.0.so
+lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
+
 # Graphics (Adreno) - from davinci-user 11 RKQ1.200826.002 20.10.20 release-keys
 vendor/lib64/libC2D2.so
 vendor/lib64/libCB.so

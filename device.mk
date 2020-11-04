@@ -164,6 +164,10 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libvulkan
 
+# Display Interfaces
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.displayfeature@1.0.vendor
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
