@@ -335,22 +335,6 @@ vendor/etc/charger_fstab.qti
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 
 # CNE - from davinci-user 11 RKQ1.200826.002 20.10.20 release-keys
-system_ext/framework/com.quicinc.cne.api-V1.1-java.jar
-system_ext/framework/com.quicinc.cne.constants-V1.0-java.jar
-system_ext/framework/com.quicinc.cne.constants-V2.0-java.jar
-system_ext/framework/com.quicinc.cne.constants-V2.1-java.jar
-system_ext/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.data.connection-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.data.connection-V1.1-java.jar
-system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
--system_ext/lib64/com.quicinc.cne.api@1.0.so
--system_ext/lib64/com.quicinc.cne.api@1.1.so
--system_ext/lib64/com.quicinc.cne.constants@1.0.so
--system_ext/lib64/com.quicinc.cne.constants@2.0.so
--system_ext/lib64/com.quicinc.cne.constants@2.1.so
 system_ext/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so
 system_ext/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so
 system_ext/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so
@@ -423,14 +407,11 @@ vendor/lib64/vendor.qti.latency@2.0.so
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so
 
 # DPM - from davinci-user 11 RKQ1.200826.002 20.10.20 release-keys
-framework/tcmclient.jar
 system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf
 system_ext/etc/init/dpmd.rc
 system_ext/etc/permissions/com.qti.dpmframework.xml
 system_ext/etc/permissions/dpmapi.xml
-system_ext/framework/com.qti.dpmframework.jar
-system_ext/framework/dpmapi.jar
 system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
 system_ext/lib64/libdiag_system.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
@@ -895,8 +876,6 @@ system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/permissions/embms.xml
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephonyservice.xml
-system_ext/framework/embmslibrary.jar
-system_ext/framework/qcrilhook.jar
 vendor/bin/hw/qcrild
 vendor/bin/adpl
 vendor/bin/netmgrd
@@ -1058,22 +1037,11 @@ vendor/etc/thermal-engine-studio.conf
 vendor/etc/thermal-engine-tgame.conf
 vendor/lib64/libthermalfeature.so
 
-# Telephony - from smali edit: https://gist.github.com/PIPIPIG233666/72806386c8b93729ce7f2b2c263d8889
-system_ext/framework/qti-telephony-common.jar|7a3f1fa141520e83e58d4afc6eebfc4f38dc9f27
-
 # Radio - IMS - from davinci-user 11 RKQ1.200826.002 20.10.20 release-keys
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice.xml
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml
-system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
-system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
-system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar
-system_ext/framework/com.qualcomm.qti.uceservice-V2.0-java.jar
-system_ext/framework/com.qualcomm.qti.uceservice-V2.1-java.jar
-system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
 system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so
 system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so
 system_ext/lib64/com.qualcomm.qti.imscmservice@2.1.so
@@ -1232,7 +1200,6 @@ vendor/lib/libFileMux_proprietary.so
 vendor/lib/libmmosal.so
 vendor/lib/libmmrtpdecoder_proprietary.so
 vendor/lib/libmmrtpencoder_proprietary.so
-vendor/lib/libwfdaac_vendor.so
 vendor/lib/libwfdcodecv4l2_proprietary.so
 vendor/lib/libwfdcommonutils_proprietary.so
 vendor/lib/libwfdconfigutils_proprietary.so
