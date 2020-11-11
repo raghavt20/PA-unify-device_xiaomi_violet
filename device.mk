@@ -323,6 +323,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += ParanoidDoze
 
 # Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service \
+    android.hardware.power-impl
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
 
