@@ -331,16 +331,15 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.persist \
-    fstab.qcom \
-    init.insmod.sh \
-    init.msm.usb.configfs.rc \
-    init.power.rc \
+    init.class_main.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
     init.qcom.rc \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
+    init.qcom.sh \
+    init.target.rc \
     init.recovery.qcom.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    fstab.qcom
 
 # RCS
 PRODUCT_PACKAGES += \
